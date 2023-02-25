@@ -1,0 +1,6 @@
+<h1>Sharing Data Between Sibling Component</h1>
+<div class="container">
+    <p>container works!</p>
+    <app-sibling-one [fromDataSiblingTwo]="fromDataSiblingTwo" [newDataFromSiblingTwo]="newDataFromSiblingTwo" (sendDataToSiblingTwo)="getDataSiblingOne($event)"></app-sibling-one>
+    <app-sibling-two [fromDataSiblingOne]="fromDataSiblingOne" [newDataFromSiblingOne]="newDataFromSiblingOne" (sendDataToSiblingOne)="getDataSiblingTwo($event)"></app-sibling-two>
+</div>
