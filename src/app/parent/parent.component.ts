@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class ParentComponent {
   name = 'Unknown';
+  child: any;
+
+  getDataChild($event: any) {
+    this.child = $event;
+  }
 }

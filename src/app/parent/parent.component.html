@@ -1,6 +1,7 @@
 <div class="container">
     <p>parent works!</p>
     <input type="text" [(ngModel)]="name">
-    <app-child [name]="name"></app-child>
+    <app-child [name]="name" (childToParent)="getDataChild($event)"></app-child>
+    <p>Data from child: {{child}}</p>
 </div>
 

@@ -1,4 +1,5 @@
 <div class="container">
     <p>child works!</p>
-    <p>My name is {{name}}</p>
+    <p>Data from parent: {{name}}</p>
+    <input type="text" [(ngModel)]="feedback" (keyup)="onSendFeedback(feedback)">
 </div>
