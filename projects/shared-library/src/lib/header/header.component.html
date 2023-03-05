@@ -1,0 +1,8 @@
+<div class="header">
+  <p>{{title}}</p>
+  <div class="menu">
+    <ng-container *ngFor="let item of menuList">
+      <a [href]="item.link" rel="noreferrer noopener">{{item.title}}</a>
+    </ng-container>
+  </div>
+</div>
